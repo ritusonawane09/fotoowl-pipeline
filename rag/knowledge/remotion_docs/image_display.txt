@@ -1,0 +1,13 @@
+Remotion Img component - displays a static image, must use Remotion's Img
+not a plain HTML img tag, so it works correctly during server-side rendering.
+
+Example:
+import { Img } from 'remotion';
+
+<Img
+  src={imagePath}
+  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+/>
+
+objectFit: 'cover' ensures the image fills the frame without distortion,
+cropping if needed rather than stretching.

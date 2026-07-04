@@ -1,0 +1,17 @@
+Remotion fade transition using interpolate and useCurrentFrame.
+
+Example:
+import { interpolate, useCurrentFrame } from 'remotion';
+
+const frame = useCurrentFrame();
+const opacity = interpolate(frame, [0, 20], [0, 1], {
+  extrapolateRight: 'clamp',
+});
+
+<div style={{ opacity }}>
+  <Img src={imageSrc} />
+</div>
+
+This fades an image in over the first 20 frames. To fade out at the end,
+interpolate opacity from 1 to 0 over the final 20 frames of the Sequence's
+durationInFrames.

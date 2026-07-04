@@ -1,0 +1,12 @@
+Remotion Sequence component - controls when a scene appears and how long it lasts.
+
+Example:
+import { Sequence } from 'remotion';
+
+<Sequence from={0} durationInFrames={90}>
+  <MyScene />
+</Sequence>
+
+'from' is the starting frame. 'durationInFrames' is how long it stays visible.
+At 30fps, 90 frames = 3 seconds. Multiple Sequences can be nested inside one
+composition to create a timeline of scenes playing one after another.
