@@ -1,6 +1,12 @@
 # fotoowl-pipeline
 
-A multiagent pipeline that takes a folder of event photos and a short creative prompt, then produces a ready-to-render Remotion (TypeScript/React) video composition. Built with LangGraph for orchestration and Gemini for vision + language tasks.
+## Project Overview
+
+FotoOwl Pipeline is an AI-powered multi-agent workflow that transforms a folder of event photos into a ready-to-render Remotion video composition.
+
+The project uses LangGraph to coordinate multiple AI agents, Google Gemini for image understanding and language generation, and ChromaDB for Retrieval-Augmented Generation (RAG). Each agent performs a specific task, from analyzing images to generating a Remotion video script.
+
+This project was developed to learn AI agent orchestration and automated video generation workflows.
 
 ---
 
