@@ -15,7 +15,17 @@ This project was developed to learn AI agent orchestration and automated video g
 The pipeline is made up of six agents that run in sequence. Each one does a single job and passes its output forward through a shared state object.
 
 ```
-intent_parser → image_analyzer → storyboard_writer → script_generator → compiler_fixer → renderer
+```mermaid
+graph LR
+    Start --> IntentParser
+    IntentParser --> ImageAnalyzer
+    ImageAnalyzer --> StoryboardWriter
+    StoryboardWriter --> ScriptGenerator
+    ScriptGenerator --> CompilerFixer
+    CompilerFixer -->|Errors Found| ScriptGenerator
+    CompilerFixer -->|Valid| Renderer
+    Renderer --> End
+```
 ```
 
 **intent_parser** — reads the user's prompt ("cinematic wedding reel, slow and warm") and extracts structured fields: style, tone, pacing, and transition preference.
@@ -128,7 +138,35 @@ All Gemini calls go through `model_config.py`. Currently everything uses `gemini
 | storyboard_writer | flash-lite | flash |
 | script_generator | flash-lite | flash |
 
+## Model Selection Rationale
+
+The pipeline uses different Gemini models depending on the workload.
+
+- **intent_parser** – Uses Gemini Flash because prompt understanding is lightweight and prioritizes low latency.
+- **image_analyzer** – Uses Gemini Flash Lite since it processes many images and minimizes API cost while maintaining sufficient vision quality.
+- **storyboard_writer** – Uses Gemini Flash to balance creativity and speed when generating the storyboard.
+- **script_generator** – Uses Gemini Flash because code generation benefits from stronger reasoning while remaining cost-effective.
+- **compiler_fixer** – Reuses Gemini Flash to repair generated TypeScript based on compiler feedback.
+
 ---
+## RAG Design Decisions
+
+The project uses ChromaDB as a local vector store for Retrieval-Augmented Generation (RAG).
+
+### Collections
+
+The vector database stores two categories of documents:
+
+- Remotion documentation
+- Video style guides
+
+### Chunking Strategy
+
+Documentation is split into small overlapping chunks before embedding. This improves retrieval accuracy while keeping prompts concise.
+
+### Retrieval Approach
+
+The storyboard writer and script generator perform semantic similarity search against the ChromaDB vector store. The retrieved context is added to the Gemini prompt so that generated storyboards and Remotion scripts are grounded in project-specific knowledge rather than relying only on the language model's internal knowledge.
 
 ## Known limitations
 
