@@ -1,0 +1,18 @@
+{
+  "title": "Event Reel",
+  "style": "cinematic",
+  "tone": "warm",
+  "images": [
+    {
+      "file": "DSC_6588.jpg",
+      "duration": 120,
+      "transition": "fade"
+    },
+    {
+      "file": "DSC_6596.jpg",
+      "duration": 120,
+      "transition": "fade"
+    }
+  ],
+  "total_duration_frames": 240
+}

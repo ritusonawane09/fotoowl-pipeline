@@ -2,7 +2,11 @@ venv/
 .env
 __pycache__/
 *.pyc
-output/
+output/*
+!output/EventReel.tsx
+!output/storyboard.json
+!output/pipeline_state.json
+!output/image_analysis_cache.json
 .pytest_cache/
 node_modules/
 remotion_project/node_modules/

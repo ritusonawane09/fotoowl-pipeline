@@ -1,0 +1,158 @@
+[
+  {
+    "image_path": "input_images\\DSC_6588.jpg",
+    "description": "A smiling Indian bride adorned in a traditional red and gold saree, elaborate jewelry, and henna tattoos, is seated outdoors with lush greenery and a stone wall in the background.",
+    "quality_score": 0.85,
+    "tags": [
+      "Indian wedding",
+      "bride",
+      "traditional attire",
+      "henna",
+      "outdoor portrait"
+    ]
+  },
+  {
+    "image_path": "input_images\\DSC_6596.jpg",
+    "description": "A bride in traditional Indian attire, wearing a red saree and intricate gold jewelry, smiles softly with her eyes downcast.",
+    "quality_score": 0.9,
+    "tags": [
+      "bride",
+      "traditional",
+      "jewelry",
+      "red saree",
+      "indian wedding"
+    ]
+  },
+  {
+    "image_path": "input_images\\DSC_6605.jpg",
+    "description": "A woman dressed in traditional Indian wedding attire, a red and gold saree, sits with her head bowed and a gentle smile. She is adorned with elaborate gold jewelry and intricate henna designs on her hands.",
+    "quality_score": 0.85,
+    "tags": [
+      "traditional attire",
+      "wedding photo",
+      "Indian culture",
+      "portrait",
+      "henna"
+    ]
+  },
+  {
+    "image_path": "input_images\\DSC_6607.jpg",
+    "description": "A bride in a traditional red and gold sari with intricate jewelry and henna on her hands sits on steps outdoors, looking down with a gentle smile.",
+    "quality_score": 0.85,
+    "tags": [
+      "bride",
+      "indian wedding",
+      "traditional attire",
+      "outdoor portrait",
+      "henna"
+    ]
+  },
+  {
+    "image_path": "input_images\\DSC_6616.jpg",
+    "description": "A woman dressed in a traditional red and gold sari, adorned with intricate jewelry and henna, smiles and looks to the side outdoors.",
+    "quality_score": 0.85,
+    "tags": [
+      "traditional attire",
+      "wedding",
+      "portrait",
+      "Indian culture",
+      "jewelry"
+    ]
+  },
+  {
+    "image_path": "input_images\\DSC_6617.jpg",
+    "description": "A smiling bride in traditional Indian attire, adorned with intricate jewelry and henna, looks down with her eyes closed, possibly during a wedding ceremony.",
+    "quality_score": 0.9,
+    "tags": [
+      "bride",
+      "indian wedding",
+      "traditional attire",
+      "henna",
+      "jewelry"
+    ]
+  },
+  {
+    "image_path": "input_images\\DSC_6629.jpg",
+    "description": "A young Indian woman in traditional attire, adorned with intricate gold jewelry, smiles over her shoulder while posing outdoors in a garden setting.",
+    "quality_score": 0.9,
+    "tags": [
+      "portrait",
+      "traditional",
+      "wedding",
+      "outdoor",
+      "jewelry"
+    ]
+  },
+  {
+    "image_path": "input_images\\DSC_6635.jpg",
+    "description": "A smiling bride in traditional Indian attire, adorned with intricate jewelry and flowers in her hair, poses outdoors with a soft, blurred background.",
+    "quality_score": 0.85,
+    "tags": [
+      "bride",
+      "traditional",
+      "jewelry",
+      "outdoor",
+      "portrait"
+    ]
+  },
+  {
+    "image_path": "input_images\\DSC_6701.jpg",
+    "description": "A smiling Indian bride and groom, dressed in traditional wedding attire, walk hand-in-hand outdoors on a grassy lawn.",
+    "quality_score": 0.9,
+    "tags": [
+      "wedding",
+      "Indian culture",
+      "couple",
+      "traditional attire",
+      "outdoor"
+    ]
+  },
+  {
+    "image_path": "input_images\\DSC_6805.jpg",
+    "description": "A bride and groom in traditional Indian wedding attire share a tender moment, embracing each other with closed eyes and smiles. The bride wears a red and gold sari with intricate beadwork, while the groom is dressed in a white kurta and a red turban.",
+    "quality_score": 0.85,
+    "tags": [
+      "Indian wedding",
+      "bride and groom",
+      "traditional attire",
+      "couple portrait",
+      "intimate moment"
+    ]
+  },
+  {
+    "image_path": "input_images\\DSC_7254.jpg",
+    "description": "A bride in a red sari and traditional jewelry is seated, looking down with a gentle smile, as her hands are adorned with henna. She is surrounded by people in festive attire, suggesting a wedding ceremony.",
+    "quality_score": 0.85,
+    "tags": [
+      "wedding",
+      "bride",
+      "Indian culture",
+      "henna",
+      "traditional attire"
+    ]
+  },
+  {
+    "image_path": "input_images\\DSC_7721.jpg",
+    "description": "A groom tenderly kisses his bride on the forehead as they pose for a portrait outdoors. The bride is wearing a heavily embroidered lehenga with intricate jewelry and henna, while the groom is in a traditional sherwani and turban.",
+    "quality_score": 0.9,
+    "tags": [
+      "wedding",
+      "portrait",
+      "couple",
+      "traditional attire",
+      "outdoor"
+    ]
+  },
+  {
+    "image_path": "input_images\\DSC_7727.jpg",
+    "description": "A groom kisses his bride on the forehead as they stand in a garden setting. The bride is smiling with her eyes closed, and both are dressed in traditional Indian wedding attire. The groom is wearing a cream-colored sherwani with intricate embroidery and a matching turban, while the bride is adorned in a heavily embellished lehenga and jewelry.",
+    "quality_score": 0.85,
+    "tags": [
+      "wedding",
+      "couple",
+      "traditional attire",
+      "outdoor",
+      "portrait"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "intent": {
+    "style": "cinematic",
+    "tone": "warm",
+    "pacing": "slow"
+  },
+  "nodes": [
+    "intent_parser",
+    "image_analyzer",
+    "storyboard_writer",
+    "script_generator",
+    "compiler_fixer",
+    "renderer"
+  ],
+  "output": {
+    "script": "EventReel.tsx"
+  }
+}
