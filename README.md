@@ -14,7 +14,6 @@ This project was developed to learn AI agent orchestration and automated video g
 
 The pipeline is made up of six agents that run in sequence. Each one does a single job and passes its output forward through a shared state object.
 
-```
 ```mermaid
 graph LR
     Start --> IntentParser
@@ -25,7 +24,6 @@ graph LR
     CompilerFixer -->|Errors Found| ScriptGenerator
     CompilerFixer -->|Valid| Renderer
     Renderer --> End
-```
 ```
 
 **intent_parser** — reads the user's prompt ("cinematic wedding reel, slow and warm") and extracts structured fields: style, tone, pacing, and transition preference.
